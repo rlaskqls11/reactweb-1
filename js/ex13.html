@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>push F12 activate chrome debugging mode</h2>
+    <h3>click button to check display by console output</h3>
+
+    <span>Total Click: 0</span>
+
+    <button id = "btn" type="button" >Try it</button>
+
+
+</body>
+
+<script>
+    let cnt = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+
+    function clickCounter(){
+        cnt++;
+        span.innerText = `click event!! ${cnt}`;
+        console.log(span.innerText);
+    }
+    
+    button.addEventListener("click",  clickCounter); 
+</script>
+
+</html>
