@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>document.write 이용한 출력하기 실습</h2>
+
+    <p>문장을 써놓기 이후에 document.write을 출력할거에요</p>
+
+    <p id="demo">innerHTML이용해서 변경할 텍스트</p>
+    <script>
+        document.write(5+7);
+        document.write('<h1>'+5+7+'</h1>');
+        document.write('<h1>'+(5+7)+'</h1>');
+
+        document.getElementById('demo').innerHTML=5+6001;
+
+    </script>
+    <button onclick="document.write(1001+2002)">본문다지워버리는write</button>
+</body>
+</html>

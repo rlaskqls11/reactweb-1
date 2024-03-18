@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>출력방법- console.log() 사용하기</h2>
+    <p>버튼 클릴할 때마다 1씩 증가하는 출력입니다</p>
+
+    <span> </span>
+
+    <button onclick="myFunction()">클릭!1씩증가해요!</button>
+    <script>
+        let cnt = 0;
+        function myFunction(){
+            console.log('click event!! ' + (cnt++));
+        }
+    </script>
+</body>
+</html>
