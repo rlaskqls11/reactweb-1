@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>출력방법 4가지 - document.write, alert, console.log 사용실습</h2>
+
+    <p>document.write출력: </p>
+
+    <button onclick="myFunction()">클릭!로그출력</button><br><br>
+    <script>
+        document.write(5+7+'<br>');
+        document.write('<h2>'+5+8+'</h2>'+'<br>');
+        document.write('<h2>'+(5+8)+'</h2>'+'<br>');
+
+        window.alert("hello !!");
+
+        let cnt = 0;
+        function myFunction(){
+            console.log('click event!! ' + cnt++);
+        }
+    </script>
+</body>
+</html>
