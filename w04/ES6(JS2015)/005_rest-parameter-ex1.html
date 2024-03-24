@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6(2015): Promise 예약 실행</title>
+</head>
+
+<body>
+  <h1>JavaScript Promise Object</h1>
+  <h2>The then() Metod</h2>
+  <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+  <h1 id="demo"></h1>
+  <h2 id="demo1"></h2>
+  <script>
+    const myPromise = new Promise(function (myResolve, myReject) {
+      setTimeout(function () {
+        myResolve("I love You !!");
+        myReject("error");
+      }, 3000);
+    });
+    myPromise.then(function (value) {
+      document.getElementById("demo").innerHTML = value;
+    }, function (value) {
+      document.getElementById("demo1").innerHTML = value;
+    }
+    );
+  </script>
+</body>
+
+</html>

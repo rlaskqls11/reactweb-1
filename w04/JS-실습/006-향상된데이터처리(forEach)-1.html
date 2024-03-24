@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>향상된 데이터 처리 : Sets, Maps, RegExp, JSON</title>
+</head>
+
+<body>
+    <p>forEach() calls a function for each element:</p>
+    <p id="demo"></p>
+    <script>
+        // Create a Set
+        const letters = new Set(["a", "b", "c"]);
+
+        // List all Elements
+        let text = "";
+        letters.forEach(function (value) {
+            text += value + "<br>";
+        })
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날자 데이터 : Date 메소드</title>
+</head>
+
+<body>
+    <h1>JavaScript Dates</h1>
+    <h2>Using Date.now()</h2>
+    <p>Calculate the number of years since January 1, 1970:</p>
+    1. Date.now(): <p id="demo1"></p>
+    2. Date.now()/year : <p id="demo2"></p>
+    <script>
+        // Calculate milliseconds in a year
+        const minute = 1000 * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+        const year = day * 365;
+        const date = Date.now();
+        document.getElementById("demo1").innerHTML = date;
+        // Divide Date.now() with a year
+        let years = Math.round(date / year);
+        document.getElementById("demo2").innerHTML = years;
+    </script>
+</body>
+
+</html>

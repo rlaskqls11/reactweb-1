@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6(2015):  spread(…) 연산자</title>
+</head>
+<body>
+    
+    <h1>JavaScript Operators</h1>
+    <h2>The ... Operator</h2>
+    <p>The "Spread" operator can be used to expand an iterable into more arguments for function calls:</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    const numbers = [23,55,21,87,56];
+    let maxValue = Math.max(...numbers);
+    
+    document.getElementById("demo").innerHTML = maxValue; 
+    </script>
+    
+</body>
+</html>
+    
