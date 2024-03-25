@@ -1,0 +1,39 @@
+/* 헤더 스타일링 */
+.header {
+    background-color: #f7e600; /* 카카오 노란색 */
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    color: #3c1e1e; /* 헤더 텍스트 색상 */
+}
+
+/* 추가 버튼 스타일링 */
+.addBtn {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3c1e1e; /* 카카오 진한 파란색 */
+    color: #ffffff; /* 버튼 텍스트 색상 */
+    border: none;
+    margin-left: 10px;
+}
+
+.addBtn:hover {
+    background-color: #574240; /* 카카오 더 진한 파란색 */
+}
+
+/* 할일 목록 스타일링 */
+#myUL li {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* 체크된 항목 스타일링 */
+#myUL li.checked {
+    background-color: #ffffff; /* 흰색 */
+    color: #8e8e8e; /* 텍스트 색상 */
+    text-decoration: line-through;
+}

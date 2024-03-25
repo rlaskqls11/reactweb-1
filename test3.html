@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>출력 하는 법</h2>
+    
+    <p>버튼 클릭 마다 1씩 증가</p>
+
+    <span>총 쿨릭 한 수: 0</span>
+
+    <button onclick="myFunction()" id ="bt1">클릭! 1씩 증가!!</button>
+
+<script>
+     let cnt = 0;
+        const button = document.getElementById('bt1');
+        const span = document.querySelector('span');
+
+        button.addEventListener('click', myFunction);
+
+    function myFunction(){
+       
+        span.innerText = `click eveent!!` + ${(cnt++)};
+        console.log('clickn event!!' + (cnt++));
+    }
+</script>
+</body>
+</html>
