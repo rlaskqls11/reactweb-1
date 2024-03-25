@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001-문자처리-template string-1</title>
+</head>
+<body>
+    <h1>javascript template string 연습</h1>
+
+    <p>템플레이트 방법은 문자열안에 변수를 입력해서 문자열을 완성하도록 사용되는 방법이다.</p>
+
+    <p id="demo">데모 공간</p>
+
+    <p>템플레이트는 IE 버전에서는 지원하지 않아요</p>
+
+
+    <script>
+        <!-- 계산식표현 -->
+        let price = 1023;
+        let vat = 0.15;
+        let n = 3;
+        let total = `구입가격총액: ${(price * n*(1+vat)).toFixed(2)} 입니다`;
+
+        document.getElementById("demo").innerHTML = total;
+    </script>
+</body>
+</html>
